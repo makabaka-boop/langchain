@@ -24,6 +24,8 @@ EXPECTED_ALL = [
     "RunnablePassthrough",
     "RunnableAssign",
     "RunnablePick",
+    "RunnableQuorum",
+    "QuorumNotMetError",
     "RunnableSequence",
     "RunnableWithFallbacks",
     "RunnableWithMessageHistory",

@@ -49,6 +49,7 @@ if TYPE_CHECKING:
         RunnablePassthrough,
         RunnablePick,
     )
+    from langchain_core.runnables.quorum import QuorumNotMetError, RunnableQuorum
     from langchain_core.runnables.router import RouterInput, RouterRunnable
     from langchain_core.runnables.utils import (
         AddableDict,
@@ -66,6 +67,7 @@ __all__ = (
     "ConfigurableFieldMultiOption",
     "ConfigurableFieldSingleOption",
     "ConfigurableFieldSpec",
+    "QuorumNotMetError",
     "RouterInput",
     "RouterRunnable",
     "Runnable",
@@ -79,6 +81,7 @@ __all__ = (
     "RunnableParallel",
     "RunnablePassthrough",
     "RunnablePick",
+    "RunnableQuorum",
     "RunnableSequence",
     "RunnableSerializable",
     "RunnableWithFallbacks",
@@ -113,6 +116,8 @@ _dynamic_imports = {
     "RunnableAssign": "passthrough",
     "RunnablePassthrough": "passthrough",
     "RunnablePick": "passthrough",
+    "QuorumNotMetError": "quorum",
+    "RunnableQuorum": "quorum",
     "RouterInput": "router",
     "RouterRunnable": "router",
     "AddableDict": "utils",

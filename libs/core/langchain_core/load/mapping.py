@@ -807,6 +807,12 @@ OLD_CORE_NAMESPACES_MAPPING: dict[tuple[str, ...], tuple[str, ...]] = {
         "base",
         "RunnableParallel",
     ),
+    ("langchain_core", "runnables", "quorum", "RunnableQuorum"): (
+        "langchain_core",
+        "runnables",
+        "quorum",
+        "RunnableQuorum",
+    ),
     ("langchain_core", "outputs", "chat_generation", "ChatGenerationChunk"): (
         "langchain_core",
         "outputs",
