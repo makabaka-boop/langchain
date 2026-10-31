@@ -39,6 +39,7 @@ from langchain_text_splitters.markdown import (
     MarkdownTextSplitter,
 )
 from langchain_text_splitters.python import PythonCodeTextSplitter
+from langchain_text_splitters.unified_diff import UnifiedDiffTextSplitter
 
 if TYPE_CHECKING:
     from langchain_text_splitters.konlpy import KonlpyTextSplitter
@@ -72,6 +73,7 @@ __all__ = [
     "TextSplitter",
     "TokenTextSplitter",
     "Tokenizer",
+    "UnifiedDiffTextSplitter",
     "split_text_on_tokens",
 ]
 
